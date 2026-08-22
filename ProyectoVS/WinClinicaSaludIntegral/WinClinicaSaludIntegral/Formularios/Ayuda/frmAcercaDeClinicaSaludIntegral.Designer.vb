@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmAcercaDeClinicaSaludIntegral
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmAcercaDeClinicaSaludIntegral
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmAcercaDeClinicaSaludIntegral))
         Me.Label1 = New System.Windows.Forms.Label()
@@ -40,10 +40,6 @@ Partial Class frmAcercaDeClinicaSaludIntegral
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label20 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -52,9 +48,10 @@ Partial Class frmAcercaDeClinicaSaludIntegral
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Teal
-        Me.Label1.Location = New System.Drawing.Point(228, 12)
+        Me.Label1.Location = New System.Drawing.Point(171, 10)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(224, 25)
+        Me.Label1.Size = New System.Drawing.Size(185, 20)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Clínica Salud  Integral"
         '
@@ -63,18 +60,20 @@ Partial Class frmAcercaDeClinicaSaludIntegral
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.Label2.Location = New System.Drawing.Point(229, 47)
+        Me.Label2.Location = New System.Drawing.Point(172, 38)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(302, 20)
+        Me.Label2.Size = New System.Drawing.Size(254, 17)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Sistema de gestión clínica y laboratorio"
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.WinClinicaSaludIntegral.My.Resources.Resources.LogoClinicaSaludIntegral1
-        Me.PictureBox1.Location = New System.Drawing.Point(3, 77)
+        Me.PictureBox1.Location = New System.Drawing.Point(2, 63)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(219, 221)
+        Me.PictureBox1.Size = New System.Drawing.Size(164, 180)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 3
         Me.PictureBox1.TabStop = False
@@ -82,9 +81,10 @@ Partial Class frmAcercaDeClinicaSaludIntegral
         'Label3
         '
         Me.Label3.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.Label3.Location = New System.Drawing.Point(233, 77)
+        Me.Label3.Location = New System.Drawing.Point(175, 63)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(310, 1)
+        Me.Label3.Size = New System.Drawing.Size(232, 1)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Label3"
         '
@@ -93,9 +93,10 @@ Partial Class frmAcercaDeClinicaSaludIntegral
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.Label4.Location = New System.Drawing.Point(229, 88)
+        Me.Label4.Location = New System.Drawing.Point(172, 72)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(66, 20)
+        Me.Label4.Size = New System.Drawing.Size(56, 17)
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "Versión"
         '
@@ -104,36 +105,40 @@ Partial Class frmAcercaDeClinicaSaludIntegral
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.Label5.Location = New System.Drawing.Point(232, 129)
+        Me.Label5.Location = New System.Drawing.Point(174, 105)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(117, 20)
+        Me.Label5.Size = New System.Drawing.Size(99, 17)
         Me.Label5.TabIndex = 6
         Me.Label5.Text = "Base de datos"
         '
         'Label6
         '
         Me.Label6.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.Label6.Location = New System.Drawing.Point(233, 118)
+        Me.Label6.Location = New System.Drawing.Point(175, 96)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(310, 1)
+        Me.Label6.Size = New System.Drawing.Size(232, 1)
         Me.Label6.TabIndex = 7
         Me.Label6.Text = "Label6"
         '
         'Label7
         '
         Me.Label7.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.Label7.Location = New System.Drawing.Point(236, 326)
+        Me.Label7.Location = New System.Drawing.Point(177, 265)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(310, 1)
+        Me.Label7.Size = New System.Drawing.Size(232, 1)
         Me.Label7.TabIndex = 8
         Me.Label7.Text = "Label7"
         '
         'Label8
         '
         Me.Label8.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.Label8.Location = New System.Drawing.Point(0, 372)
+        Me.Label8.Location = New System.Drawing.Point(0, 302)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(540, 1)
+        Me.Label8.Size = New System.Drawing.Size(405, 1)
         Me.Label8.TabIndex = 9
         Me.Label8.Text = "Label8"
         '
@@ -142,18 +147,20 @@ Partial Class frmAcercaDeClinicaSaludIntegral
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.Label9.Location = New System.Drawing.Point(12, 387)
+        Me.Label9.Location = New System.Drawing.Point(9, 314)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(473, 20)
+        Me.Label9.Size = New System.Drawing.Size(402, 17)
         Me.Label9.TabIndex = 10
         Me.Label9.Text = "© 2026 Clínica Salud Integral. Todos los derechos reservados."
         '
         'Label10
         '
         Me.Label10.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.Label10.Location = New System.Drawing.Point(233, 159)
+        Me.Label10.Location = New System.Drawing.Point(175, 129)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(310, 1)
+        Me.Label10.Size = New System.Drawing.Size(232, 1)
         Me.Label10.TabIndex = 11
         Me.Label10.Text = "Label10"
         '
@@ -162,9 +169,10 @@ Partial Class frmAcercaDeClinicaSaludIntegral
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label11.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.Label11.Location = New System.Drawing.Point(232, 170)
+        Me.Label11.Location = New System.Drawing.Point(174, 138)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(133, 20)
+        Me.Label11.Size = New System.Drawing.Size(113, 17)
         Me.Label11.TabIndex = 12
         Me.Label11.Text = "Desarollado por "
         '
@@ -173,9 +181,10 @@ Partial Class frmAcercaDeClinicaSaludIntegral
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label12.ForeColor = System.Drawing.SystemColors.ControlDark
-        Me.Label12.Location = New System.Drawing.Point(235, 337)
+        Me.Label12.Location = New System.Drawing.Point(176, 274)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(76, 20)
+        Me.Label12.Size = New System.Drawing.Size(64, 17)
         Me.Label12.TabIndex = 13
         Me.Label12.Text = "Contacto"
         '
@@ -184,9 +193,10 @@ Partial Class frmAcercaDeClinicaSaludIntegral
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label13.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label13.Location = New System.Drawing.Point(440, 88)
+        Me.Label13.Location = New System.Drawing.Point(330, 72)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(44, 20)
+        Me.Label13.Size = New System.Drawing.Size(40, 17)
         Me.Label13.TabIndex = 14
         Me.Label13.Text = "1.0.0"
         '
@@ -195,9 +205,10 @@ Partial Class frmAcercaDeClinicaSaludIntegral
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label14.Location = New System.Drawing.Point(361, 129)
+        Me.Label14.Location = New System.Drawing.Point(271, 105)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(182, 20)
+        Me.Label14.Size = New System.Drawing.Size(151, 17)
         Me.Label14.TabIndex = 15
         Me.Label14.Text = "BDClinicaSaludIntegral"
         '
@@ -206,9 +217,10 @@ Partial Class frmAcercaDeClinicaSaludIntegral
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label15.Location = New System.Drawing.Point(396, 170)
+        Me.Label15.Location = New System.Drawing.Point(297, 138)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(115, 20)
+        Me.Label15.Size = New System.Drawing.Size(98, 17)
         Me.Label15.TabIndex = 16
         Me.Label15.Text = "Giovanni Silva"
         '
@@ -217,65 +229,18 @@ Partial Class frmAcercaDeClinicaSaludIntegral
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label16.Location = New System.Drawing.Point(364, 337)
+        Me.Label16.Location = New System.Drawing.Point(273, 274)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(179, 20)
+        Me.Label16.Size = New System.Drawing.Size(149, 17)
         Me.Label16.TabIndex = 17
         Me.Label16.Text = "soporte@clinicasi.com"
         '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label17.Location = New System.Drawing.Point(396, 201)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(120, 20)
-        Me.Label17.TabIndex = 18
-        Me.Label17.Text = "Andrew Eslava"
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label18.Location = New System.Drawing.Point(396, 232)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(127, 20)
-        Me.Label18.TabIndex = 19
-        Me.Label18.Text = "Andrea Miranda"
-        '
-        'Label19
-        '
-        Me.Label19.AutoSize = True
-        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label19.Location = New System.Drawing.Point(396, 264)
-        Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(120, 20)
-        Me.Label19.TabIndex = 20
-        Me.Label19.Text = "Renzo Mantilla"
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label20.Location = New System.Drawing.Point(396, 294)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(124, 20)
-        Me.Label20.TabIndex = 21
-        Me.Label20.Text = "Gabriel Barreto"
-        '
         'frmAcercaDeClinicaSaludIntegral
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(566, 425)
-        Me.Controls.Add(Me.Label20)
-        Me.Controls.Add(Me.Label19)
-        Me.Controls.Add(Me.Label18)
-        Me.Controls.Add(Me.Label17)
+        Me.ClientSize = New System.Drawing.Size(426, 352)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label14)
@@ -295,7 +260,8 @@ Partial Class frmAcercaDeClinicaSaludIntegral
         Me.Controls.Add(Me.Label1)
         Me.ForeColor = System.Drawing.SystemColors.ControlDark
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MinimumSize = New System.Drawing.Size(584, 472)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.MinimumSize = New System.Drawing.Size(442, 391)
         Me.Name = "frmAcercaDeClinicaSaludIntegral"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Acerca De Clínica Salud Integral"
@@ -322,8 +288,4 @@ Partial Class frmAcercaDeClinicaSaludIntegral
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents Label16 As Label
-    Friend WithEvents Label17 As Label
-    Friend WithEvents Label18 As Label
-    Friend WithEvents Label19 As Label
-    Friend WithEvents Label20 As Label
 End Class
