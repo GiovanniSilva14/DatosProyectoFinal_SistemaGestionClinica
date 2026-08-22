@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F29ED11-31DB-4DF7-B2DF-40630D545BF7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WinClinicaSaludIntegral.My.MyApplication</StartupObject>
+    <RootNamespace>WinClinicaSaludIntegral</RootNamespace>
+    <AssemblyName>WinClinicaSaludIntegral</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WinClinicaSaludIntegral.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WinClinicaSaludIntegral.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>IconoAccesoDirecto.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formularios\Ayuda\frmAcercaDeClinicaSaludIntegral.Designer.vb">
+      <DependentUpon>frmAcercaDeClinicaSaludIntegral.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ayuda\frmAcercaDeClinicaSaludIntegral.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmBoletaDetalleEliminados.Designer.vb">
+      <DependentUpon>frmBoletaDetalleEliminados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmBoletaDetalleEliminados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmBoletasEliminados.Designer.vb">
+      <DependentUpon>frmBoletasEliminados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmBoletasEliminados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmCitasEliminados.Designer.vb">
+      <DependentUpon>frmCitasEliminados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmCitasEliminados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmConsultoriosEliminados.Designer.vb">
+      <DependentUpon>frmConsultoriosEliminados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmConsultoriosEliminados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmDistribuidorasEliminados.Designer.vb">
+      <DependentUpon>frmDistribuidorasEliminados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmDistribuidorasEliminados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmEmpleadosEliminados.Designer.vb">
+      <DependentUpon>frmEmpleadosEliminados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmEmpleadosEliminados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmEspecialidadesEliminados.Designer.vb">
+      <DependentUpon>frmEspecialidadesEliminados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmEspecialidadesEliminados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmFacturaDetalleEliminados.Designer.vb">
+      <DependentUpon>frmFacturaDetalleEliminados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmFacturaDetalleEliminados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmFacturasEliminados.Designer.vb">
+      <DependentUpon>frmFacturasEliminados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmFacturasEliminados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmFarmaciaEliminados.Designer.vb">
+      <DependentUpon>frmFarmaciaEliminados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmFarmaciaEliminados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmHistoriaClinicaEliminados.Designer.vb">
+      <DependentUpon>frmHistoriaClinicaEliminados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmHistoriaClinicaEliminados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmMedicamentosEliminados.Designer.vb">
+      <DependentUpon>frmMedicamentosEliminados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmMedicamentosEliminados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmMedicosEliminados.Designer.vb">
+      <DependentUpon>frmMedicosEliminados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmMedicosEliminados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmPacientesElminados.Designer.vb">
+      <DependentUpon>frmPacientesElminados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmPacientesElminados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmRecetaLaboratoriosEliminados.Designer.vb">
+      <DependentUpon>frmRecetaLaboratoriosEliminados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmRecetaLaboratoriosEliminados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmRecetasCategoriasEliminados.Designer.vb">
+      <DependentUpon>frmRecetasCategoriasEliminados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmRecetasCategoriasEliminados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmRecetasEliminados.Designer.vb">
+      <DependentUpon>frmRecetasEliminados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmRecetasEliminados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmUsuariosEliminados.Designer.vb">
+      <DependentUpon>frmUsuariosEliminados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmUsuariosEliminados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmUsuariosEmpleadosEliminados.Designer.vb">
+      <DependentUpon>frmUsuariosEmpleadosEliminados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmUsuariosEmpleadosEliminados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmUsuariosMedicosEliminados.Designer.vb">
+      <DependentUpon>frmUsuariosMedicosEliminados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Eliminados\frmUsuariosMedicosEliminados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Login\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Login\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenimiento\frmRecetaCategorias.Designer.vb">
+      <DependentUpon>frmRecetaCategorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenimiento\frmRecetaCategorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenimiento\frmBoletaDetalle.Designer.vb">
+      <DependentUpon>frmBoletaDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenimiento\frmBoletaDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenimiento\frmEmpleados.Designer.vb">
+      <DependentUpon>frmEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenimiento\frmEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Mantenimiento\frmFacturaDetalle.Designer.vb">
+      <DependentUpon>frmFacturaDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Mantenimiento\frmFacturaDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Movimiento\frmBoletas.Designer.vb">
+      <DependentUpon>frmBoletas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Movimiento\frmBoletas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Movimiento\frmCitas.Designer.vb">
+      <DependentUpon>frmCitas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Movimiento\frmCitas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Movimiento\frmFacturas.Designer.vb">
+      <DependentUpon>frmFacturas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Movimiento\frmFacturas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Movimiento\frmFarmacia.Designer.vb">
+      <DependentUpon>frmFarmacia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Movimiento\frmFarmacia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Movimiento\frmHistoriaClinica.Designer.vb">
+      <DependentUpon>frmHistoriaClinica.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Movimiento\frmHistoriaClinica.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Movimiento\frmPacientes.Designer.vb">
+      <DependentUpon>frmPacientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Movimiento\frmPacientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Movimiento\frmRecetas.Designer.vb">
+      <DependentUpon>frmRecetas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Movimiento\frmRecetas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Principal\frmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Principal\frmPrincipal.Designer.vb">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Seguridad\frmUsuarios.Designer.vb">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Seguridad\frmUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Seguridad\frmUsuariosEmpleados.Designer.vb">
+      <DependentUpon>frmUsuariosEmpleados.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Seguridad\frmUsuariosEmpleados.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Seguridad\frmUsuariosMedicos.Designer.vb">
+      <DependentUpon>frmUsuariosMedicos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Seguridad\frmUsuariosMedicos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Servicios\frmConsultorios.Designer.vb">
+      <DependentUpon>frmConsultorios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Servicios\frmConsultorios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Servicios\frmDistribuidoras.Designer.vb">
+      <DependentUpon>frmDistribuidoras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Servicios\frmDistribuidoras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Servicios\frmEspecialidades.Designer.vb">
+      <DependentUpon>frmEspecialidades.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Servicios\frmEspecialidades.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Servicios\frmRecetaLaboratorios.Designer.vb">
+      <DependentUpon>frmRecetaLaboratorios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Servicios\frmRecetaLaboratorios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Servicios\frmMedicamentos.Designer.vb">
+      <DependentUpon>frmMedicamentos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Servicios\frmMedicamentos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Servicios\frmMedicos.Designer.vb">
+      <DependentUpon>frmMedicos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Servicios\frmMedicos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuloSistema.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Formularios\Ayuda\frmAcercaDeClinicaSaludIntegral.resx">
+      <DependentUpon>frmAcercaDeClinicaSaludIntegral.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Eliminados\frmBoletaDetalleEliminados.resx">
+      <DependentUpon>frmBoletaDetalleEliminados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Eliminados\frmBoletasEliminados.resx">
+      <DependentUpon>frmBoletasEliminados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Eliminados\frmCitasEliminados.resx">
+      <DependentUpon>frmCitasEliminados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Eliminados\frmConsultoriosEliminados.resx">
+      <DependentUpon>frmConsultoriosEliminados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Eliminados\frmDistribuidorasEliminados.resx">
+      <DependentUpon>frmDistribuidorasEliminados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Eliminados\frmEmpleadosEliminados.resx">
+      <DependentUpon>frmEmpleadosEliminados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Eliminados\frmEspecialidadesEliminados.resx">
+      <DependentUpon>frmEspecialidadesEliminados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Eliminados\frmFacturaDetalleEliminados.resx">
+      <DependentUpon>frmFacturaDetalleEliminados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Eliminados\frmFacturasEliminados.resx">
+      <DependentUpon>frmFacturasEliminados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Eliminados\frmFarmaciaEliminados.resx">
+      <DependentUpon>frmFarmaciaEliminados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Eliminados\frmHistoriaClinicaEliminados.resx">
+      <DependentUpon>frmHistoriaClinicaEliminados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Eliminados\frmMedicamentosEliminados.resx">
+      <DependentUpon>frmMedicamentosEliminados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Eliminados\frmMedicosEliminados.resx">
+      <DependentUpon>frmMedicosEliminados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Eliminados\frmPacientesElminados.resx">
+      <DependentUpon>frmPacientesElminados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Eliminados\frmRecetaLaboratoriosEliminados.resx">
+      <DependentUpon>frmRecetaLaboratoriosEliminados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Eliminados\frmRecetasCategoriasEliminados.resx">
+      <DependentUpon>frmRecetasCategoriasEliminados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Eliminados\frmRecetasEliminados.resx">
+      <DependentUpon>frmRecetasEliminados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Eliminados\frmUsuariosEliminados.resx">
+      <DependentUpon>frmUsuariosEliminados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Eliminados\frmUsuariosEmpleadosEliminados.resx">
+      <DependentUpon>frmUsuariosEmpleadosEliminados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Eliminados\frmUsuariosMedicosEliminados.resx">
+      <DependentUpon>frmUsuariosMedicosEliminados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Login\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenimiento\frmRecetaCategorias.resx">
+      <DependentUpon>frmRecetaCategorias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenimiento\frmBoletaDetalle.resx">
+      <DependentUpon>frmBoletaDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenimiento\frmEmpleados.resx">
+      <DependentUpon>frmEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Mantenimiento\frmFacturaDetalle.resx">
+      <DependentUpon>frmFacturaDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Movimiento\frmBoletas.resx">
+      <DependentUpon>frmBoletas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Movimiento\frmCitas.resx">
+      <DependentUpon>frmCitas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Movimiento\frmFacturas.resx">
+      <DependentUpon>frmFacturas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Movimiento\frmFarmacia.resx">
+      <DependentUpon>frmFarmacia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Movimiento\frmHistoriaClinica.resx">
+      <DependentUpon>frmHistoriaClinica.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Movimiento\frmPacientes.resx">
+      <DependentUpon>frmPacientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Movimiento\frmRecetas.resx">
+      <DependentUpon>frmRecetas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Principal\frmPrincipal.aa-ER.resx">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Principal\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Seguridad\frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Seguridad\frmUsuariosEmpleados.resx">
+      <DependentUpon>frmUsuariosEmpleados.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Seguridad\frmUsuariosMedicos.resx">
+      <DependentUpon>frmUsuariosMedicos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Servicios\frmConsultorios.resx">
+      <DependentUpon>frmConsultorios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Servicios\frmDistribuidoras.resx">
+      <DependentUpon>frmDistribuidoras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Servicios\frmEspecialidades.resx">
+      <DependentUpon>frmEspecialidades.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Servicios\frmRecetaLaboratorios.resx">
+      <DependentUpon>frmRecetaLaboratorios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Servicios\frmMedicamentos.resx">
+      <DependentUpon>frmMedicamentos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Servicios\frmMedicos.resx">
+      <DependentUpon>frmMedicos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Imagenes\Iconos\Iconos16\" />
+    <Folder Include="Imagenes\Iconos\Iconos24\" />
+    <Folder Include="Imagenes\Iconos\Iconos48\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IconoAccesoDirecto.ico" />
+    <Content Include="Imagenes\Fondos\FondoClinica.jpeg" />
+    <Content Include="Imagenes\Fondos\IconoAccesoDirecto.ico" />
+    <Content Include="Imagenes\Fondos\LogoClinicaSaludIntegral.png" />
+    <Content Include="Imagenes\Fondos\LogoInicioSesion.png" />
+    <Content Include="Imagenes\Iconos\Iconos Botones\IconoAgregar.gif" />
+    <Content Include="Imagenes\Iconos\Iconos Botones\IconoCancelar.gif" />
+    <Content Include="Imagenes\Iconos\Iconos Botones\IconoCerrar.gif" />
+    <Content Include="Imagenes\Iconos\Iconos Botones\IconoEditar.gif" />
+    <Content Include="Imagenes\Iconos\Iconos Botones\IconoEliminados.gif" />
+    <Content Include="Imagenes\Iconos\Iconos Botones\IconoEliminar.gif" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoAcerca de Laboratorio LuVi.gif" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoBoletas.png" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoBuscar médico.gif" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoCambiarcontraseña.gif" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoCategoríasdereceta.gif" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoCerrar sesión.gif" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoCitas.png" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoConsultorios.gif" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoConvenios con empresas.gif" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoDetalledeboleta.gif" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoDetalledefactura.gif" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoDistribuidoras.gif" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoEmpleados.gif" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoEspecialidades.png" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoFacturas.png" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoFarmacia.png" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoHistoriaClínica .png" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoLaboratoriosdereceta.gif" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoMedicamentos.gif" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoMédicos.gif" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoPacientes.png" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoRecetas.png" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoUsuariosEmpleados.gif" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoUsuariosMédicos.gif" />
+    <Content Include="Imagenes\Iconos\Iconos32\IconoUsuarios.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
